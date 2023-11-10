@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="/static/style.css">
+<html>
+<head>
+    <title>東京工科大学成績照会システム</title>
+</head>
+<body>
+    <div class="banner-container">
+        <p class="banner-text"></p>
+    </div>
+    <div class="navbar">
+        <a href="https://www.teu.ac.jp/" target="_blank">ホームページ</a>
+        <a href="https://service.cloud.teu.ac.jp/" target="_blank">学生ポータル</a>
+        <a href="https://www.teu.ac.jp/gaiyou/006493.html" target="_blank">お問い合わせ</a>
+        <a href="https://www.teu.ac.jp/siryou/ques/index.html" target="_blank">入試・入学相談</a>
+    </div>
+    <div class="banner">
+        <h1>東京工科大学成績照会システム</h1>
+    </div>
+    <form id="getScoreForm" method="POST">
+        <label for="studentid">学生ID：</label>
+        <input type="text" id="studentid" name="studentid" required>
+        <button type="submit">検索</button>
+    </form>
+    <div id="resultDiv"></div>	
+    <script src="/static/script.js"></script>
+</body>
+</html>
